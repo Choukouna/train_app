@@ -1,0 +1,62 @@
+class Constante {
+
+  static final String SLOT_PENDING = 'Pending';
+  static final String SLOT_AVAILABLE = 'Available';
+  static final String SLOT_CONFIRMED = 'Accepted';
+
+  static final String PSEUDO = "Pseudo";
+  static final String APPNAME = "TrainApp";
+  static final String PSEUDO_BUSY = "Oops, pseudo déjà pris :(";
+  static final String PSEUDO_NOT_FOUND = "Oops, pseudo non trouvé :(";
+  static final String MATCH_SAVED = "Match enregistré avec succès !";
+  static final String ADD_MATCH_TITLE = "Ajout de match";
+  static final String ADD_MATCH_VERB = "Ajouter un match";
+  static final String ANO_PLAYER = "Joueur Anonyme";
+  static final String ANO_PLAYER_ACRONYM = "JA";
+  static final String RANKING_LABEL = "Classement";
+  static final String RANKING_TEXT = "Ton classement (officiel ou approximatif)*";
+  static final String RANKING_ERROR = "Ton classement doit-être dans le système de la FFT";
+  static final String MATCH_DATE = "Date du match";
+  static final String WIN = "victoire";
+  static final String DEFEAT = "defaite";
+  static final String INPUT_MATCH = "Saisis le résultat du match stp";
+  static final String ADD_ONE_SET = "Au moins un set doit être renseigné";
+  static final String COMMENT_MATCH = "Commentaire du match si tu veux (ce que tu voulais travailler, quel a été le résultat ?..)";
+  static final String SAVE_MATCH = "Enregistrer le match";
+  static final String PRINT_MATCH = "Afficher mes matches";
+  static final String ADD_AVAILABILITY = "Ajouter/voir mes disponibilités";
+  static final String PLAYERS_AVAILABILITY = "Voir les disponibilités des autres";
+  static final String FOREHAND = "Son coup droit ou son revers ?";
+  static final String LOGIN_VERB = "Me connecter";
+  static final String LOGIN = "Me connecter";
+  static final String PASSWORD = "Mot de passe";
+  static final String PASSWORD_LABEL = "Un mot de passe pour sécuriser tout ça*";
+  static final String PASSWORD_ERROR = "6 caractères au moins sont requis";
+  static final String PASSWORD_CONFIRMATION = "Une seconde fois pour le valider*";
+  static final String PASSWORD_IDENTICAL = "Les mots de passe ne sont pas identiques";
+  static final String MY_ACCOUNT = "Créer mon compte";
+  static final String NO_MATCH = "Tu n'as aucun match sur ton compte encore.";
+  static final String PALMARES = "Mon palmarès";
+  static final String MATCH_DETAIL = "Detail de match";
+  static final String MATCH_DETAILS = "Details de mon match";
+  static final String AVAILABILITY_TITLE = "Mes dispos";
+  static final String PLAYERS_CALENDAR = "Calendrier des joueurs";
+  static final String BUSY_SLOT = "Ce créneau est déjà complet..";
+  static final String SLOT_OWNER = "Vous êtes l'initiateur de ce créneau";
+  static final String SLOT_REQUESTED = "Votre demande a été envoyée au créateur du créneau";
+  static final String LOGIN_SUCCESS = "Connexion réussie";
+  static final String LOGIN_ERROR = "Erreur lors de la connexion";
+  static final String ACCOUNT_CREATION = "Création de compte";
+  static final String ACCOUNT_CREATED = "Compte créé avec succès";
+  static final String ACCOUNT_ERROR = "Erreur lors de la création du compte";
+  static final String PSEUDO_LABEL = "Ton pseudo qui te donne tes super coups droits*";
+  static final String PSEUDO_ERROR = "Ton pseudo doit contenir au moins 6 caractères";
+  static final String CITY_ERROR = "Le nom de la ville doit contenir au moins 2 caractères";
+  static final String EMAIL_LABEL = "Email*";
+  static final String EMAIL_ERROR = "Email";
+  static final String FIRSTNAME_LABEL = "Prénom (optionnel)";
+  static final String LASTNAME_LABEL = "Nom*";
+  static final String CITY = "Ville* (pour te proposer le calendrier de ta ville)";
+  static final String UNKNOWN_CITY = "Non renseigné";
+
+}
