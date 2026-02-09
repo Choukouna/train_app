@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../db/user_provider.dart';
 
 class UserProfilePage extends StatefulWidget {
@@ -19,6 +20,10 @@ class _UserProfilePageState extends State<UserProfilePage> {
   @override
   Widget build(BuildContext context) {
     final userProvider = Provider.of<UserProvider>(context);
+
+    Future.microtask(() {
+      context.read<UserProvider>().refreshUserInfos();
+    });
 
     if (userProvider.loading) {
       return const Scaffold(
