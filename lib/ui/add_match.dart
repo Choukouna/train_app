@@ -1,12 +1,9 @@
 import 'dart:async';
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jeusetmatch/dto/rank.dart';
 import 'package:jeusetmatch/dto/set_score.dart';
-import 'package:jeusetmatch/ui/home_page.dart';
-import 'package:jeusetmatch/ui/shared/base_scaffold.dart';
 import 'package:provider/provider.dart';
 
 import '../db/crud.dart';
@@ -137,8 +134,8 @@ class AddMatchState extends State<AddMatch> {
       });
     
     // Check if it was his best/worst match and update stat
-    Rank bestMatchRank = Utils.extractRankFromString(userData?['bestWin']);
-    Rank worstMatchRank = Utils.extractRankFromString(userData?['worstDefeat']);
+    Rank bestMatchRank = Utils.extractRankFromString(userData?['bestWin'] == "" ? '40/2' : userData?['bestWin']);
+    Rank worstMatchRank = Utils.extractRankFromString(userData?['worstDefeat'] == "" ? '-15' : userData?['worstDefeat']);
     Rank opponentRank = Utils.extractRankFromString(_classementController.text.trim());
     if (victoire) {
       if (opponentRank.isGreaterThan(bestMatchRank)) { // Current best match rank < today victory opp rank
